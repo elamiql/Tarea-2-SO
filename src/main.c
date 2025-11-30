@@ -32,8 +32,8 @@ void* funcion_hebra(void* arg){
 
 void mostrar_uso(const char* nombre_programa) {
     printf("Uso: %s [N] [E]\n", nombre_programa);
-    printf("  N: Número de hebras (default: 5)\n");
-    printf("  E: Número de etapas (default: 4)\n");
+    printf("  N: Numero de hebras (default: 5)\n");
+    printf("  E: Numero de etapas (default: 4)\n");
     printf("\nEjemplos:\n");
     printf("  %s           # 5 hebras, 4 etapas\n", nombre_programa);
     printf("  %s 3         # 3 hebras, 4 etapas\n", nombre_programa);
@@ -63,9 +63,9 @@ int main(int argc, char* argv[]) {
 
     srand(time(NULL));
     printf("\n");
-    printf("Configuración:\n");
-    printf("  • Número de hebras (N): %d\n", N);
-    printf("  • Número de etapas (E): %d\n", num_etapas);
+    printf("Configuracion:\n");
+    printf("  • Numero de hebras (N): %d\n", N);
+    printf("  • Numero de etapas (E): %d\n", num_etapas);
     printf("\n");
     
     if (barrera_init(&barrera_global, N) != 0) {
@@ -81,7 +81,7 @@ int main(int argc, char* argv[]) {
     }
     
     printf("════════════════════════════════════════════════════════════\n");
-    printf("Iniciando ejecución...\n");
+    printf("Iniciando ejecucion...\n");
     printf("════════════════════════════════════════════════════════════\n\n");
 
     for (int i = 0; i < N; i++) {
@@ -122,6 +122,6 @@ int main(int argc, char* argv[]) {
     barrera_destroy(&barrera_global);
     
     printf("\n════════════════════════════════════════════════════════════\n");
-    printf("EJECUCIÓN COMPLETADA\n");
+    printf("EJECUCION COMPLETADA\n");
     printf("════════════════════════════════════════════════════════════\n\n");
 }
