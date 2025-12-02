@@ -10,7 +10,7 @@
 // 'usado' = 1 significa "pagina recientemente referenciada"
 // Al buscar victima, damos segunda oportunidad reseteando a 0
 // Retorna: indice del marco a reemplazar
-int reloj_reemplazo(int nvp) {
+int reloj_reemplazo() {
     int marco_victima = -1;
     int vueltas = 0;
     int max_vueltas = Nmarcos * 2; // Evitar bucle infinito
